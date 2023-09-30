@@ -1,8 +1,10 @@
 <title> Web Layout Stylizer </title>
 
 <div>
-  <h1> color-selection content can go here </h1>
-  <button (click)="onTextButtonClick()"> Test Button </button>
+  <p> color1 </p>
+  <div style="width:100px;height:100px;"
+       [ngStyle]="{'background-color':box1StyleColor}"></div>
+  <input #box (keyup.enter)="update(box.value)">
 </div>
 
 <div [ngStyle]="{'background-color': navBackgroundColor, 'color': navTextColor}">

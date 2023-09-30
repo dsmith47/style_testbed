@@ -10,6 +10,8 @@ export class AppComponent {
 
   navBackgroundColor:string = 'blue';
   navTextColor:string = 'white';
+  
+  box1StyleColor:string = '#FFFF00';
 
   ngOnInit() {
     this.navBackgroundColor = 'blue';
@@ -25,6 +27,17 @@ export class AppComponent {
     return {
       'background-color': 'blue',
       'color': 'white'
+    }
+  }
+
+  update(colorString:string) {
+    if (colorString.length == 7) {
+      this.box1StyleColor = colorString;
+    }
+  }
+
+  box1StyleObject(): Object {
+    return {
     }
   }
 }
