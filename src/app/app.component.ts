@@ -18,13 +18,16 @@ export class AppComponent {
     this.navBackgroundColor = 'blue';
     this.navTextColor = 'white';
 
-    this.colors.set('box1', '#0FFF00')
+    this.colors.set('box1', '#199900')
     this.colors.set('box2', '#FFFFFF')
     this.colors.set('box3', '#F0F0F0')
     this.colors.set('box4', '#FFFFFF')
     this.colors.set('box5', '#000000')
-    this.colors.set('box6', '#0F0F0F')
-    this.colors.set('box7', '#000FFF')
+    this.colors.set('box6', '#FFFFFF')
+    //this.colors.set('box6', '#0F0F0F')
+    this.colors.set('box7', '#000228')
+    //this.colors.set('box7', '#000000')
+    //this.colors.set('box7', '#000FFF')
   }
 
   navStyleObject(): Object {

@@ -32,7 +32,7 @@
 </div>
 
 <!-- Actual website -->
-<div class="navbar">
+<div class="navbar" [ngStyle]="{'background-color':colors.get('box1')}">
   <a class="navbar-item site-nav" href="#"
    [ngStyle]="hnavStyle()">
     H-Nav Elem 1
@@ -43,6 +43,7 @@
   </a>
 </div>
 
+<div style="background-color:#000111">
 <div class="container" [ngStyle]="fullPageStyle()">
   <div class="row">
     <div class="col-3"> 
@@ -87,4 +88,4 @@
     </div>
   </div>
 </div>
-
+</div>
